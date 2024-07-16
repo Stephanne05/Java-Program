@@ -1,0 +1,33 @@
+public class ProgramExample {
+
+    private int number;
+
+    // Constructor
+    public ProgramExample(int number) {
+        this.number = number;
+    }
+
+    // Non-static method
+    public void displayNumber() {
+        System.out.println("Number: " + number);
+    }
+
+    // Static method 1
+    public static void staticMethod1() {
+        System.out.println("This is static method 1.");
+    }
+
+    // Static method 2
+    public static void staticMethod2() {
+        System.out.println("This is static method 2.");
+    }
+
+    public static void main(String[] args) {
+        ProgramExample program = new ProgramExample(10);
+
+        program.displayNumber();
+
+        staticMethod1();
+        staticMethod2();
+    }
+}
